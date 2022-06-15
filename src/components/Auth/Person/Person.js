@@ -91,7 +91,7 @@ const Person = () => {
             publicApi.delete(`data-delete/${posOrgan.id}/`)
                 .then(data => {
                     refreshPage()
-                    toast.success('Успешно удалили')
+                    toast.success('Успешное удаление')
                 }).catch(error => {
                 toast.error("error")
                 console.log(error)
@@ -171,7 +171,7 @@ const Person = () => {
                                      logout()
                                      navigate('/')
                                  }}
-                            >Выйти из аккаунт
+                            >Выйти из аккаунта
                             </div>
                         </div>
                     </div>
@@ -321,8 +321,7 @@ const Person = () => {
                                             </div>
                                             <div>
                                                 <div>
-                                                    <p className="person__passport--title">Фотография с паспортом в
-                                                        руках</p>
+                                                    <p className="person__passport--title">Заявление</p>
                                                     <div
                                                         className="w-72 h-40 rounded flex justify-center align-middle">
                                                     <span className="w-full h-40 py-3">
@@ -347,8 +346,7 @@ const Person = () => {
                                             </div>
                                             <div className={'cursor-pointer'} onClick={() => setImgPass(true)}>
                                                 <div>
-                                                    <p className="person__passport--title">Фотография с паспортом в
-                                                        руках</p>
+                                                    <p className="person__passport--title">Завяление</p>
                                                     <div
                                                         className="w-52 h-40 bg-gray-300 rounded flex justify-center align-middle">
                                                     <span className="pt-16">
@@ -419,20 +417,20 @@ const Person = () => {
                                  }}>
                                 <div className='my-courses--bank'>
                                     <NavLink to={"/person/question-result"}>
-                                        <p className='my-courses--bank--p'>Результат теста</p>
+                                        <p className='my-courses--bank--p'>Результаты тестов</p>
                                         <FontAwesomeIcon className='my-courses--bank--icon' icon={faArrowRightLong}/>
                                     </NavLink>
                                 </div>
                             </div>
                             {
-                                <div><p className='my-courses--p2'>На рассмотренииу администратора:</p>
+                                <div><p className='my-courses--p2'>На рассмотрении у администратора : </p>
                                     <div className='my-courses--business'
                                          onClick={() => {
                                              navigate(`/person/notActivated`)
                                              refreshPage()
                                          }}
                                     >
-                                        <p className='my-courses--business--p'>Курсы на рассмотренииу администратора</p>
+                                        <p className='my-courses--business--p'>Курсы на рассмотрении у администратора : </p>
                                         <FontAwesomeIcon className='my-courses--business--icon'
                                                          icon={faArrowRightLong}/>
                                     </div>

@@ -23,7 +23,7 @@ const CoursesVideoLesson = ({el}) => {
                             clickFile === false ? <ReactPlayer
                                 width="100%"
                                 url={video.url}
-                            /> : "Нажмите на материалы"
+                            /> : "Нажмите на материалы для просмотра"
                     }
             </div>
             <div className="react-player-block">

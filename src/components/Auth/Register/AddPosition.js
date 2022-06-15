@@ -21,9 +21,9 @@ const AddPosition = ({add, setAdd}) => {
     const dispatch = useDispatch()
     const validationSchema = Yup.object().shape({
         position: Yup.string()
-            .required('Введите Должонсть'),
+            .required('Введите должность'),
         organization: Yup.string()
-            .required('Введите Организация'),
+            .required('Введите организацию'),
     });
     const formOptions = {resolver: yupResolver(validationSchema)};
     const {register, handleSubmit, formState: {errors,}} = useForm(formOptions);
@@ -43,7 +43,7 @@ const AddPosition = ({add, setAdd}) => {
             .then(data => {
                 refreshPage()
                 dataId(data)
-                toast.success("Успешно добавили")
+                toast.success("Успешное добавление")
                 setAdd(false)
             }).catch(error => {
             toast.error(error.response.data.user[0])
@@ -96,7 +96,7 @@ const AddPosition = ({add, setAdd}) => {
                             type='button'
                             className='add--position--form--btns--btn1 mx-2.5'
                             onClick={() => setAdd(false)}
-                        >отменить</button>
+                        >Отменить</button>
                         <button
                             onClick={() => navigate("/person")}
                             className='add--position--form--btns--btn2 mx-2.5'

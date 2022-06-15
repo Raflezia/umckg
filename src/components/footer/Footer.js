@@ -12,7 +12,11 @@ const Footer = () => {
                         <div className="footer--start">
                             <img src={logo} alt="" className="footer--start--img"/>
                             <span className="footer--start--block">
-                                <h1 className="footer--start--block--title">Образовательная платорма</h1>
+                            <h1 className="footer--start--block--title">УМЦ
+                                Государственной службы 
+                                финансовой разведки при Министерстве
+                                 финансов Кыргызской Республики</h1>
+
                                 <ul className="footer--start--block--items">
                                     <NavLink to={"/"}><li>Главная</li></NavLink>
                                     <NavLink to={"/courses"}><li>Курсы</li></NavLink>
@@ -44,14 +48,12 @@ const Footer = () => {
                         </span>
                         </div>
                         <div className="footer--end">
-                            <h1 className="footer--end--title"><NavLink to={"/contact"}>Контакты</NavLink></h1>
+                            <h1 className="footer--end--title">Контакты</h1>
 
                             <span className="footer--end--address">
-
-                                <h5 className="footer--end--address--desc">+996 222 533 735</h5>
-                                <h5 className="footer--end--address--desc">Ashimov18@gmail.com</h5>
-                                <h5 className="footer--end--address--desc">Бишкек,Микрорайон Туңгуч,
-                                    ул.Лелина 109/3</h5>
+                                <h5 className="footer--end--address--desc">(+996) 500 004912</h5>
+                                <h5 className="footer--end--address--desc">info@umc.kg</h5>
+                                <h5 className="footer--end--address--desc">Бишкек, ул. Тоголок-Молдо 21-а, здание Государственной службы финансовой разведки</h5>
                             </span>
                         </div>
                     </div>

@@ -34,7 +34,7 @@ const ModalLesson = ({video,setVideo ,file,setFile, modal, setModal, clickFile,s
                            clickFile === false ? <ReactPlayer
                                width="100%"
                                url={video.url}
-                           /> : "Нажмите на материалы"
+                           /> : "Нажмите на материалы для просомотра"
                    }
                </div>
            </div>

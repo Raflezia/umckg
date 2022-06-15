@@ -49,7 +49,7 @@ const AddPhotoPassword = ({imgPass, setImgPass}) => {
                 console.log(data, "logdata")
                 setCreateImg(data)
                 imgId(data)
-                toast.success("Успешно")
+                toast.success("Документы успешно загружены")
             })
             .catch(error => {
 
@@ -87,7 +87,7 @@ const AddPhotoPassword = ({imgPass, setImgPass}) => {
                         {
                             createImg.length > 0 ?
                                 <>
-                                    <span className="sm:w-full">Выбрали фото</span>
+                                    <span className="sm:w-full">Документ загружен</span>
                                     <input
                                         className={`opacity-0 flex items-center absolute add--btns--innn2---in1`}
                                         {...register("pasport_1")} id="file-upload" type="file" onChange={(e) => {
@@ -97,7 +97,7 @@ const AddPhotoPassword = ({imgPass, setImgPass}) => {
                                     }}/></>
                                 :
                                 <>
-                                    <span className="sm:w-full">Фото паспорта</span>
+                                    <span className="sm:w-full">Паспорт</span>
                                     <input
                                         className={`opacity-0 flex items-center absolute add--btns--innn2---in1`}
                                         {...register("pasport_1")} id="file-upload" type="file" onChange={(e) => {
@@ -111,7 +111,7 @@ const AddPhotoPassword = ({imgPass, setImgPass}) => {
                                 {
                                     createImg2.length > 0 ?
                                         <>
-                                        <span className="sm:w-full">Выбрали фото</span>
+                                        <span className="sm:w-full">Документ загружен</span>
                                         <input
                                             className={`opacity-0 flex items-center absolute add--btns--innn2---in1`}
                                             {...register("pasport_2")} id="file-upload" type="file" onChange={(e) => {
@@ -121,7 +121,7 @@ const AddPhotoPassword = ({imgPass, setImgPass}) => {
                                         }}/></>
                                         :
                                        <>
-                                           <span className="sm:w-full">Фото с паспортом в руках</span>
+                                           <span className="sm:w-full">Заявление</span>
                                            <input
                                                className={`opacity-0 flex items-center absolute add--btns--innn2---in1`}
                                                {...register("pasport_2")} id="file-upload" type="file" onChange={(e) => {
@@ -136,7 +136,7 @@ const AddPhotoPassword = ({imgPass, setImgPass}) => {
                             type='button'
                             className='add--position--form--btns--btn1 mx-2.5'
                             onClick={() => setImgPass(false)}
-                        >отменить</button>
+                        >Отменить</button>
                         {
                             createImg.length > 0 && createImg2.length > 0 ?
                                 <button

@@ -65,7 +65,7 @@ const Question = () => {
     const onClickTest = () => {
         axios
             .post(
-                `https://djangorestapp.herokuapp.com/scoreboard-Create-list/`,
+                `https://umckg.herokuapp.com/scoreboard-Create-list/`,
                 {
                     score: +result(),
                     point: +score,
@@ -78,7 +78,7 @@ const Question = () => {
             )
             .then((data) => {
                 result(data);
-                toast.success("успешно");
+                toast.success("Успешно");
             })
             .catch((e) => {
                 console.log(e);
@@ -107,9 +107,8 @@ const Question = () => {
                     signTest ?
                         <div className="">
                             <div className="flex justify-center w-full">
-                                <p className="text-gray-900 text-2xl text-center">Эй халтурщик !!! ты уже сдал этот тест
-                                    ,
-                                    тупой что ли ?</p>
+                                <p className="text-gray-900 text-2xl text-center">На прохождение данного теста вам была предоставлена одна попытка. 
+                                 С результатом пройденного тестирования вы можете ознакомиться в своем личном кабинете</p>
                             </div>
                         </div>
                         : <div>
@@ -117,7 +116,7 @@ const Question = () => {
                                 <div className="flex justify-center align-middle">
                                     <div className="pt-16">
                                         <p className="py-2">
-                                            {score}:Правильные ответы / из{" "}
+                                            {score} : правильные ответы / из {" "}
                                             {elem?.choicetest?.length} вопрос
                                         </p>
                                         <div>
