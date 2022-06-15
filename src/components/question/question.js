@@ -181,7 +181,7 @@ const Question = () => {
                                                     }
                                                 </div>
                                                 <p className="text-center text-sm text-light ">
-                                                    Ответы ( один вариант )
+                                                    Ответы ( один  вариант )
                                                 </p>
                                             </div>
                                             {question?.flags.map((flag) => (
