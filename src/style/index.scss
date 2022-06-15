@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/////////Tailwind/////////////////////////////////////
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+///////////////////////////////////////////////////////
+@import "Auth/Register/registerCode";
+@import "Auth/Register/Activate";
+@import "Auth/Register/SignIn";
+@import "Auth/Updated/UpdatePositon";
+@import "Auth/Updated/UpdateOrganization";
+@import "Auth/Updated/UpdatePassword";
+@import "Auth/Updated/UpdatePhone";
+@import "Auth/Updated/UpdateEmail";
+@import "Auth/Updated/UpdateName";
+@import "Auth/Register/AddPosition";
+@import "Auth/Person/AddImgPas";
+@import "Auth/Updated/UpdateImgPassword";
+
+//////////////////////PERSON//////////////////////////
+@import "./../style/courses/coursesAdmin/NotActived";
+@import "./../style/courses/coursesAdmin/acivedCourse";
+@import "Auth/Person/Login";
+@import "Auth/Person/Person";
+@import "Auth/Person/hookform";
+
+//////////////////////MAIN COURSES//////////////////////
+@import "./../style/courses/courses";
+@import "./../style/accordion/accordion";
+
+//////////////////////COURSES FREE//////////////////////
+@import "./../style/courses/coursesDetails";
+@import "./../style/courses/coursesLesson";
+@import "./../style/card/coursesCard";
+
+
+////////// LESSON VIDEO ////////////////////////////////
+@import "./../style/coursesVideoLesson/ReactPlayer";
+@import "./../style/coursesVideoLesson/ModalLesson";
+
+///////////// LESSON TEST //////////////////////////////
+@import "./../style/question/question";
+@import "./../style/question/testResult";
+
+
+////////////////////////COMPONENTS//////////////////////
+@import "./../style/Header/header";
+@import "./../style/home/home";
+@import "./../style/about/about";
+@import "./../style/Footer/footer";
+
+///////////////////////REGISTER/////////////////////////
+@import "./../style/register/RegisterCopy";
+@import "./../style/register/FormInput";
+@import "./../style/register/registerCode";
+
+//*---------media----------*
+@import "./../media/media-style";
+//*---------media----------*
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}

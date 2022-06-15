@@ -1,0 +1,56 @@
+.coursesCard{
+  width: 370px;
+  height: 89%;
+
+
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 25px rgba(100, 100, 100, 0.15);
+  border-radius: 10px;
+  margin: 20px 10px;
+  &--box{
+    padding:0 10px;
+
+    &--title{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 36px;
+
+      color: #01487E;
+    }
+
+    &--date{
+      width: 5%;
+      margin-top: -2px;
+      font-style: normal;
+      font-weight: bolder;
+      font-size: 16px;
+      line-height: 27px;
+      /* identical to box height */
+
+
+      color: #494949;
+    }
+
+    &--price{
+      width: 121px;
+      height: 42px;
+
+      background: #01487E;
+      border-radius: 10px 0 10px;
+      border-color: transparent;
+      margin-left: 68.3%;
+
+
+
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      /* identical to box height */
+
+
+      color: #FFFFFF;
+
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+@media (max-width: 464px) {
+  .coursesCard{
+    width: 325px;
+    height: 331px;
+    margin-bottom: 50px;
+
+    &--box{
+
+      margin-top: 192px;
+      padding: 10px;
+
+
+
+      &--title{
+
+      }
+
+      &--price{
+        margin-left: 194px;
+      }
+    }
+
+
+  }
+}
+@media (max-width: 430px) {
+  .coursesCard{
+    width: 80vw;
+    height: 100%;
+    margin-bottom: 50px;
+
+    &--box{
+      margin-top: 192px;
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 5px ;
+      background: antiquewhite;
+      &--price{
+        margin-left: auto;
+        width: 100px;
+        height: 35px;
+        font-size: 16px;
+      }
+    }
+
+
+  }
+}
+
+
